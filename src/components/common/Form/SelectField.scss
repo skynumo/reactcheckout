@@ -1,0 +1,23 @@
+$insertRowBg: rgb(255, 255, 204);
+$borderColor: #dee2e6;
+$primaryColor: #76AEB7;
+
+.form.control:focus,
+.focus-visiable,
+.css-1vp9nu5-control {
+  border-color: #76AEB7 !important;
+  box-shadow: unset !important;
+} 
+
+.inline-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  .css-2b097c-container {
+    margin-left: 10px;
+    width: 50%;
+  }
+  label {
+    margin: 0px;
+  }
+}

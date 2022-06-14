@@ -1,0 +1,58 @@
+$bgColor: #ffffff;
+$linkColor: #000000;
+$iconColor: red;
+$primaryColor: #ff5200;
+
+.app-sidebar {
+  background-color: $bgColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 240px;
+  width: 240px;
+  display: flex;
+  border:unset;
+  border-radius: 0;
+  .navbar {
+    flex-flow: column nowrap;
+    .navbar-brand {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primaryColor;
+      margin-bottom: 10px;
+    }
+    .navbar-collapse {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 8px;
+        .nav-item {
+          .nav-link {
+            color: $linkColor;
+            padding: 12px;
+            &:hover {
+              background-color: rgba(0,0,0,0.02);
+            }
+            .nav-icon {
+              width: 20px;
+              display: inline-block;
+              text-align: center;
+              margin-right: 10px;
+              color: $primaryColor;
+              svg,
+              i {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

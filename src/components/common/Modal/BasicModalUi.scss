@@ -1,0 +1,16 @@
+.themeModal {
+  .modal-header .modal-title{
+    text-align: center;
+    width: 100%;
+    margin-right: -30px;
+  }
+  .modal-content {
+    border-radius: 0;
+    border:unset;
+  }
+} 
+
+.modalTriggerIcon {
+  cursor: pointer;
+  font-size: 20px;
+}

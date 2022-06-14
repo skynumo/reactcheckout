@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Checkout</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=""/>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">	
+	<link rel="stylesheet" href="css/countrySelect.css">	
+	<link rel="stylesheet" href="css/select2.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<!-- header code -->
+	<header>
+		<div class="hedtop_mainbar">
+			<a href="#">ENJOY UP TO 70% OFF. USE CODE NEWNESS</a>
+		</div>
+		<div class="headerdata_one">
+			<div class="container">
+				<div class="hedlengdata">
+					<form>
+						<div class="form-item">
+							<input id="country_selector" type="text">
+							<label for="country_selector" style="display:none;">Select a country here...</label>
+						</div>
+					</form>
+				</div>
+				<div class="midlogodata">
+					<a href="javascript:void(0);">
+						<img src="svg/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="rightuercartdata">
+					<div class="rightuercart_iner">
+						<div class="hed_userbtntop">
+							<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signin">
+								<img src="svg/user-icon-hed.svg" alt="">
+							</a>
+						</div>
+						<div class="hed_wishlistbtntop">
+							<a href="javascript:void(0);">
+								<img src="svg/wishlist-icon-hed.svg" alt="">
+							</a>
+						</div>
+						<div class="hed_cartbtntop">
+							<div class="iSelect fixedWidth rounded">
+								<label for="chk">
+									<input aria-hidden="true" id="chk" type="checkbox">
+									<span class="select-label active" title="Select the model">
+										<img src="svg/cart-icon-hed.svg" class="cartnvimg" alt="">
+										<b>1</b>
+									</span>
+
+									<ul role="listbox">
+										<div class="maindicrtdati-cov">
+											<h3>My Cart</h3>
+											<div class="maindicrtdati-inr">
+												<div class="maindicrtdati-prodlst">
+													<div class="maindicrtdati-left">
+														<img src="images/product-img.png" alt="Product">
+													</div>
+													<div class="maindicrtdati-right">
+														<a href="javascript:void(0);">
+															Rust High Neck Frill Smock Dress
+														</a>
+														<h6>1 X $149.00</h6>
+													</div>
+													<a href="javascript:void(0);" class="cartdorp-remove"><i class='bx bx-x'></i></a>
+												</div>
+												<div class="maindicrtdati-prodlst">
+													<div class="maindicrtdati-left">
+														<img src="images/product-img.png" alt="Product">
+													</div>
+													<div class="maindicrtdati-right">
+														<a href="javascript:void(0);">
+															Rust High Neck Frill Smock Dress
+														</a>
+														<h6>2 X $149.00</h6>
+													</div>
+													<a href="javascript:void(0);" class="cartdorp-remove"><i class='bx bx-x'></i></a>
+												</div>
+												<div class="maindicrtdati-prodlst">
+													<div class="maindicrtdati-left">
+														<img src="images/product-img.png" alt="Product">
+													</div>
+													<div class="maindicrtdati-right">
+														<a href="javascript:void(0);">
+															Rust High Neck Frill Smock Dress
+														</a>
+														<h6>2 X $149.00</h6>
+													</div>
+													<a href="javascript:void(0);" class="cartdorp-remove"><i class='bx bx-x'></i></a>
+												</div>
+												<div class="carttog-total">
+													<h5>TOTAL PRICE</h5>
+													<h4>$538.00</h4>
+												</div>
+												<div class="togcart-myvcartalbtn">
+													<a href="javascript:void(0);" class="tog-viewcartbtn">View My Cart</a>
+													<a href="javascript:void(0);" class="tog-gotodesh">Go To checkout</a>
+													<a href="javascript:void(0);" class="tog-clearcart">Clear Cart</a>
+												</div>
+											</div>
+										</div>
+									</ul>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="headerdata_nav">
+					<div class="headerdata_manu">
+						<nav class="navbar navbar-expand-lg navbar-light ">
+							<div class="cover-namenulogonav">
+								<!-- <div class="left-navmenulogo">
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+								</div> -->
+								<div class="collapse navbar-collapse right-hednavmaincov" id="navbarSupportedContent">
+									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+										<li class="nav-item dropdown actmenudaminbtn">
+											<a class="nav-link dropdown-toggle d-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												Women <svg class="navarrowbtnmenu" id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<polyline points="6 9 12 15 18 9"></polyline>
+													</svg>
+											</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle d-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												Men <svg class="navarrowbtnmenu" id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<polyline points="6 9 12 15 18 9"></polyline>
+													</svg>
+											</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a class="nav-link dropdown-toggle d-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												Kids <svg class="navarrowbtnmenu" id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<polyline points="6 9 12 15 18 9"></polyline>
+													</svg>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Electronics</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="headerdata_search">
+						<input type="text" placeholder="Search Here">
+						<button><img src="images/search-icon.png" alt=""></button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="headerdata_two">
+			<div class="container">
+				<div class="mobile_headercov">
+					<div class="mobile_headerleft">
+						<a href="javascript:void(0);">
+							<img src="images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="mobile_headeright">
+						<div class="hedlengdata mobile_setbox">
+							<form>
+								<div class="form-item">
+									<input id="country_selector2" type="text">
+									<label for="country_selector" style="display:none;">Select a country here...</label>
+								</div>
+							</form>
+						</div>
+						
+						<div class="mobile_heduser1">
+							<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signup_mobile">
+								<img src="svg/user-icon-hed.svg" alt="">
+							</a>
+						</div>
+						<div class="mobile_hedusearch">
+							<!-- <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signin">
+								<img src="svg/search-icon-hed.svg" alt="">
+							</a> -->
+							<div id="wrap">
+								<form action="" autocomplete="on">
+								<input id="search" name="search" type="text" placeholder="Search Here"><input id="search_submit" value="Rechercher" type="submit">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="botmenucetsltmain">
+				<div class="container">
+					<ul> 
+						<li class="active">
+							<a href="javascript:void(0);">Women</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Men</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Kids</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Electronics</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="hedsubmenu_listcov">
+			<div class="container">
+				<ul>
+					<li>
+						<a href="javascript:void(0);">Brand</a>
+					</li>
+					<li><a href="javascript:void(0);">Accessories</a></li>
+					<li><a href="javascript:void(0);">Sports</a></li>
+					<li><a href="javascript:void(0);">Bags</a></li>
+					<li><a href="javascript:void(0);" class="browse item">Shoes</a></li>
+					<li class="mega-dropdown menusumegamin_cov">
+						<a href="javascript:void(0);" class="browse item">New Arivals</a>
+						<div class="megamenu">
+							<div class="mainmegamenusetcov">
+								<div class="mainmegamenuset_navlist rightbordermegasub">
+									<h5>SHOP BY PRODUCT</h5>
+									<a href="">Shoes</a>
+									<a href="">Accessories</a>
+									<a href="">Bags</a>
+									<a href="">Beauty</a>
+									<a href="">Home & gifting</a>
+									<a href="">sports</a>
+									<a href="">Boutique</a>
+									<a href="">Streetwear</a>
+									<a href="">Modest</a>
+								</div>
+								<div class="mainmegamenuset_navlist">
+									<h5>SHOP BY New in</h5>
+									<a href="">Dresses</a>
+									<a href="">TOpS</a>
+									<a href="">T-shirts & vests</a>
+									<a href="">Arabian clothing</a>
+									<a href="">Pants & leggings</a>
+									<a href="">Abayas</a>
+									<a href="">Jumpsuits & Playsuits</a>
+									<a href="">Hoodies & sweatshirts</a>
+									<a href="">Skirts</a>
+									<a href="">Jackets & coats</a>
+								</div>
+								<div class="mainmegamenuset_imgdata">
+									<img src="images/mega-menu-img.png" alt="">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="javascript:void(0);">Clothing</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header code -->
+
+	
+	
+
+  
+	<!-- SIGN IN Modal -->
+	<div class="modal fade signgiupmodalset-cov" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="signinsignup-main">
+						<div class="signinsignup-left">
+							<img src="images/login-img.png" alt="Login">
+						</div>
+						<div class="signinsignup-right">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							<h3>SIGN IN</h3>
+							<div class="comsignupinsetcov">
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">Email</label>
+										<input type="text" class="form-control" id="" placeholder="Enter Email address">
+									</div>
+								</div>
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">Password</label>
+										<input type="text" class="form-control" id="" placeholder="Enter Email address">
+									</div>
+								</div>
+								<div class="forgotbnt-link">
+									<a href="javascript:void(0);">Forgot Your Password?</a>
+								</div>
+								<div class="login-btnsetcov">
+									<button>Login</button>
+								</div>
+								<div class="with-signinbntset">
+									<h6>OR SIGN IN WITH</h6>
+									<a href="javascript:void(0);">
+										<img src="images/facebook-icon.png" alt="">
+									</a>
+									<a href="javascript:void(0);">
+										<img src="images/google-icon.png" alt="">
+									</a>
+								</div>
+								<div class="newcretaccot-link">
+									<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signup">Create New Account?</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SIGN UP Modal -->
+	<div class="modal fade signgiupmodalset-cov" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="signinsignup-main">
+						<div class="signinsignup-left">
+							<img src="images/login-img2.png" alt="Login">
+						</div>
+						<div class="signinsignup-right">
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							<h3>CREATE NEW ACCOUNT</h3>
+							<div class="comsignupinsetcov">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="comsignupinset-inerform">
+											<div class="form-group">
+												<label for="">First Name</label>
+												<input type="text" class="form-control" id="" placeholder="Enter First name">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="comsignupinset-inerform">
+											<div class="form-group">
+												<label for="">Last Name</label>
+												<input type="text" class="form-control" id="" placeholder="Enter Last name">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">Email</label>
+										<input type="text" class="form-control" id="" placeholder="Enter Email Address">
+									</div>
+								</div>
+								<div class="siginup-newlettbox">
+									<div class="custom_checkbox">
+										<label class="control control--checkbox">
+										<p>Sign Up for Newsletter</p>
+										<input type="checkbox" checked="checked">
+										<div class="control__indicator"></div>
+										</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="comsignupinset-inerform">
+											<div class="form-group formdatamiancov">
+												<label for="">Date of birth</label>
+												<div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+													<input class="form-control" type="text" placeholder="Select Date" readonly />
+													<span class="input-group-addon"><i class='bx bx-calendar'></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="comsignupinset-inerform">
+											<div class="form-group">
+												<label for="">Gender</label>
+												<select class="js-example-basic-single" name="gender">
+													<option value="">Male</option>
+													<option value="">Female</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">Mobile No</label>
+										<div class="sltmobileaninput">
+											<input type="text" class="form-control" id="" placeholder="Enter Mobile No">
+											<select class="js-example-basic-single" name="gender">
+												<option value="">+973</option>
+												<option value="">+91</option>
+												<option value="">+92</option>
+												<option value="">+93</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">OTP</label>
+										<input type="password" class="form-control" id="" placeholder="Enter OTP">
+									</div>
+								</div>
+								<div class="comsignupinset-inerform">
+									<div class="form-group">
+										<label for="">Password</label>
+										<input type="password" class="form-control" id="" placeholder="Enter Password">
+									</div>
+								</div>
+								<div class="siginup-newlettbox">
+									<div class="custom_checkbox">
+										<label class="control control--checkbox">
+										<p>By using this form you agree with the storage
+											and handling of your data by this website.</p>
+										<input type="checkbox" checked="checked">
+										<div class="control__indicator"></div>
+										</label>
+									</div>
+								</div>
+
+								
+								<div class="login-btnsetcov">
+									<button>Login</button>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SIGN UP Modal Mobile -->
+	<div class="modal fade signgiupmodalset-cov signu_mobilesetcov" id="signup_mobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="mobisiinuphed">
+						<img src="svg/white-logo.svg" alt="">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="signinsignup_mobile">
+						<div class="mobformmaincovlist">
+							<h3>Sign up</h3>
+							<p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signin_mobile">Log in</a></p>
+							<div class="mobformmaincov-form">
+								<div class="form-group">
+									<input type="" class="form-control" id="" placeholder="Full Name">
+									<i class='bx bx-user-circle'></i>
+								</div>
+							</div>
+							<div class="mobformmaincov-form">
+								<div class="form-group">
+									<input type="" class="form-control" id="" placeholder="E - mail ID">
+									<i class='bx bx-envelope'></i>
+								</div>
+							</div>
+							<div class="mobformmaincov-form allincovnumb">
+								<div class="form-group crtnumbbox">
+									<input type="" class="form-control" id="" placeholder="" value="+880">
+								</div>
+								<div class="form-group crtnumminbox">
+									<input type="" class="form-control" id="" placeholder="E - mail ID" value="1613496034">
+									<i class='bx bx-mobile-alt'></i>
+								</div>
+							</div>
+							<div class="mobformmaincov-form">
+								<div class="form-group">
+									<input type="" class="form-control" id="" placeholder="Enter your OTP">
+								</div>
+							</div>
+							<div class="mobformmaincov-form">
+								<div class="form-group passhideshow">
+									<input type="" class="form-control" id="" placeholder="Password">
+									<i class='bx bx-lock'></i>
+									<!-- <a href="#"><i class='bx bx-show'></i></a> -->
+									<a href="#"><i class='bx bx-low-vision'></i></a>
+								</div>
+							</div>
+						
+							
+							<div class="halfdatamaincov">
+								<div class="row">
+									<div class="comsignupinset-inerform">
+										<div class="form-group">
+											<select class="js-example-basic-single" name="gender">
+												<option value="">Gender</option>
+												<option value="">Male</option>
+												<option value="">Female</option>
+											</select>
+											<img src="svg/gender.svg" alt="">
+										</div>
+									</div>
+									<div class="mobformmaincov-form">
+										<div class="form-group formdatamiancov">
+											<div id="datepicker1" class="input-group date" data-date-format="dd-mm-yyyy">
+												<input class="form-control" type="text" placeholder="Birthdate" readonly />
+												<span class="input-group-addon"><i class='bx bx-calendar-alt'></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="siginup-newlettbox">
+								<div class="custom_checkbox">
+									<label class="control control--checkbox">
+									<p>I accept the <a href="#">terms & conditions</a></p>
+									<input type="checkbox" checked="checked">
+									<div class="control__indicator"></div>
+									</label>
+								</div>
+							</div>
+							
+							<div class="signupinbtnmobile">
+								<button>Create account</button>
+							</div>
+							<div class="with-signinbntset">
+								<h6>or continue with</h6>
+								<a href="javascript:void(0);">
+									<img src="images/facebook-icon.png" alt="">
+								</a>
+								<a href="javascript:void(0);">
+									<img src="images/google-icon.png" alt="">
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- SIGN IN Modal Mobile -->
+	<div class="modal fade signgiupmodalset-cov signu_mobilesetcov" id="signin_mobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="mobisiinuphed">
+						<img src="svg/white-logo.svg" alt="">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="signinsignup_mobile">
+						<div class="mobformmaincovlist">
+							<h3>Log In</h3>
+							<p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signup_mobile">Sign up</a></p>
+							
+							<div class="sigininform-cover">
+								<div class="mobformmaincov-form">
+									<div class="form-group">
+										<input type="" class="form-control" id="" placeholder="E - mail ID Or Mobile No.">
+										<i class='bx bx-envelope'></i>
+									</div>
+								</div>
+								<div class="mobformmaincov-form">
+									<div class="form-group passhideshow">
+										<input type="" class="form-control" id="" placeholder="Password">
+										<i class='bx bx-lock'></i>
+										<!-- <a href="#"><i class='bx bx-show'></i></a> -->
+										<a href="#"><i class='bx bx-low-vision'></i></a>
+									</div>
+								</div>
+								<div class="forgotlinksetmobsiinup">
+									<a href="#">Forgot Password?</a>
+								</div>
+							</div>
+							
+							
+							<div class="signupinbtnmobile">
+								<button>Log in</button>
+							</div>
+							<div class="with-signinbntset">
+								<h6>or continue with</h6>
+								<a href="javascript:void(0);">
+									<img src="images/facebook-icon.png" alt="">
+								</a>
+								<a href="javascript:void(0);">
+									<img src="images/google-icon.png" alt="">
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer code -->
+	<div class="mainfooter-cover">
+		<div class="container">
+			<div class="whyshop-sectcov">
+				<h3>WHY SHOP WITH US?</h3>
+				<div class="whyshop-sectiner">
+					<div class="whyshop-sectibox">
+						<img src="images/footer-icon1.png" alt="">
+						<h4>CASH ON DELIVERY</h4>
+						<p>Pay by cash when receiving your order</p>
+					</div>
+					<div class="whyshop-sectibox borderlrfix">
+						<img src="images/footer-icon2.png" alt="">
+						<h4>FREE & EASY RETURNS</h4>
+						<p>We collect items you want to return
+							from your doorstep free of charge</p>
+					</div>
+					<div class="whyshop-sectibox">
+						<img src="images/footer-icon3.png" alt="">
+						<h4>NO SURPRISES</h4>
+						<p>Your order total is 100% guaranteed.
+							There will be no additional charges
+							due upon delivery</p>
+					</div>
+				</div>
+			</div>
+			<div class="offiappdow-box">
+				<h3>newness OFFICIAL APPS</h3>
+				<a href="javascript:void(0);">
+					<img src="images/app-store-icon.png" alt="">
+				</a>
+				<a href="javascript:void(0);">
+					<img src="images/play-store-icon.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="subcribenews-cov">
+				<div class="subcribenews-iner">
+					<p>Subcribe To our News</p>
+					<div class="subcribenews-form">
+						<input type="text" placeholder="Enter Email Address">
+						<button>Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footernav-topmain">
+				<div class="container">
+					<div class="footernav-topiner">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="left-footlogosoc">
+									<a href="javascript:void(0);" class="footerlogo">
+										<img src="images/logo.png" alt="">
+									</a>
+									<p>A lifestyle app that believes you are capable of control. Selling 1000+ authentic brands with over 250,000 products. Offering to 1,000,000 users worldwide. With our 24/7 customer service, tackle any issues you may face. Instantly.</p>
+									<ul>
+										<h3>Connect With Newness</h3>
+										<li>
+											<a href="javascript:void(0);">
+												<img src="images/social-icon-1.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">
+												<img src="images/social-icon-2.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">
+												<img src="images/social-icon-3.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">
+												<img src="images/social-icon-4.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">
+												<img src="images/social-icon-5.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="footernav-menulist">
+									<ul>
+										<h3>Infomation</h3>
+										<li><a href="javascript:void(0);">About Us</a></li>
+										<li><a href="javascript:void(0);">Contact Us</a></li>
+										<li><a href="javascript:void(0);">Terms & Conditions</a></li>
+										<li><a href="javascript:void(0);">Returns & Refunds</a></li>
+										<li><a href="javascript:void(0);">Shipping & Delivery</a></li>
+										<li><a href="javascript:void(0);">Privacy Policy</a></li>
+										<li><a href="javascript:void(0);">FAQs</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="footernav-menulist">
+									<ul>
+										<h3>Quick Links</h3>
+										<li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signin">My Account</a></li>
+										<li><a href="javascript:void(0);">Wishlist</a></li>
+										<li><a href="javascript:void(0);">All Brands</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="mobilefootlinksetcov">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+									  	<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+												Infomation
+											</button>
+									  	</h2>
+										<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li><a href="javascript:void(0);">About Us</a></li>
+													<li><a href="javascript:void(0);">Contact Us</a></li>
+													<li><a href="javascript:void(0);">Terms & Conditions</a></li>
+													<li><a href="javascript:void(0);">Returns & Refunds</a></li>
+													<li><a href="javascript:void(0);">Shipping & Delivery</a></li>
+													<li><a href="javascript:void(0);">Privacy Policy</a></li>
+													<li><a href="javascript:void(0);">FAQs</a></li>
+												</ul>
+											</div>
+									  	</div>
+									</div>
+									<div class="accordion-item">
+									  	<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												Quick Links
+											</button>
+									  	</h2>
+									  	<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul>
+													<li><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#signup_mobile">My Account</a></li>
+													<li><a href="javascript:void(0);">Wishlist</a></li>
+													<li><a href="javascript:void(0);">All Brands</a></li>
+												</ul>
+											</div>
+									  	</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-payoptlist">
+				<div class="container">
+					<div class="footer-payoptiner">
+						<p>We Accept</p>
+						<a href="javascript:void(0);"><img src="images/payment-icon1.png" alt=""></a>
+						<a href="javascript:void(0);"><img src="images/payment-icon2.png" alt=""></a>
+						<a href="javascript:void(0);"><img src="images/payment-icon3.png" alt=""></a>
+						<a href="javascript:void(0);"><img src="images/payment-icon4.png" alt=""></a>
+						<a href="javascript:void(0);"><img src="images/payment-icon5.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- footer code -->
+
+	<div class="tabnavdata-covlist">
+		<ul>
+			<li class="active">
+				<a href="javascript:void(0);">
+					<i class='bx bx-home'></i>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i class='bx bx-gift'></i>
+					<span>Gift</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i class='bx bx-category'></i>
+					<span>Category</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i class='bx bx-heart'></i>
+					<span>Wishlist</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i class='bx bx-cart'></i>
+					<span>Cart</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/countrySelect.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>	
+	<script src="js/select2.min.js"></script>
+
+	<script>
+		$('.js-example-basic-single').select2({
+			minimumResultsForSearch: -1
+		});
+		$(function () {
+			$("#datepicker").datepicker({ 
+					autoclose: true, 
+					todayHighlight: true
+			});
+		});
+		$(function () {
+			$("#datepicker1").datepicker({ 
+					autoclose: true, 
+					todayHighlight: true
+			});
+		});
+
+		$("#country_selector").countrySelect({
+			defaultCountry: "bd",
+			onlyCountries: ['bd', 'ae', 'bh', 'sa'],
+			// responsiveDropdown: true,
+			//preferredCountries: ['ca', 'gb', 'us']
+			responsiveDropdown: true
+		});
+		$("#country_selector2").countrySelect({
+			defaultCountry: "bd",
+			onlyCountries: ['bd', 'ae', 'bh', 'sa'],
+			// responsiveDropdown: true,
+			//preferredCountries: ['ca', 'gb', 'us']
+			responsiveDropdown: true
+		});
+
+		var iSelectDropDown = (function() {
+		var $el = $(".iSelect");
+		var $elListItem = $(".iSelect").find("ul li");
+		var $selectedText = $(".iSelect").find(".select-label");
+		function iSelect() {
+			$elListItem.on("click", function() {
+			$selectedText.text($(this).text()).attr('title', $(this).text());
+			});
+		}
+		return iSelect;
+		})();
+		var iselect = new iSelectDropDown();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+$bgColor: #ffffff;
+$linkColor: #000000;
+$iconColor: red;
+$primaryColor: #ff5200;
+
+.app-header {
+  background-color: $bgColor;
+  display: flex;
+  border:unset;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 240px;
+  z-index: 99999;
+  .navbar {
+    margin-left: auto;
+    .navbar-brand {
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primaryColor;
+    }
+    .navbar-collapse {
+      align-items: center;
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $linkColor;
+            min-width: 100px;
+            text-align: center;
+            &:hover {
+              background-color: rgba(0,0,0,0.02);
+            }
+          }
+        }
+      }
+      .btn {
+        border-radius: 25px;
+        min-width: 100px;
+        margin: 0 5px;
+      }
+    }
+  }
+}

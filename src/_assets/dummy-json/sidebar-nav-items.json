@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Home",
+        "link": "/",
+        "icon": "home",
+        "isActive": true,
+        "hide": false,
+        "type": "link",
+        "classes": "gdfgdfgs"
+    },
+    {
+        "name": "Pricing",
+        "link": "/pricing",
+        "icon": "dollar",
+        "isActive": true,
+        "hide": false,
+        "type": "link",
+        "classes": ""
+    },
+    {
+        "hide": false,
+        "type": "seperator",
+        "classes": ""
+    },
+    {
+        "name": "Gallery",
+        "link": "gallery",
+        "icon": "star",
+        "isActive": false,
+        "hide": false,
+        "type": "dropdown",
+        "classes": "nav-dropdown",
+        "items": [
+            {
+                "name": "Item 1",
+                "link": "Item 1",
+                "icon": "Item 1",
+                "isActive": false,
+                "hide": false,
+                "type": "link",
+                "classes": "sub-item"
+            },
+            {
+                "name": "Item 1",
+                "link": "Item 1",
+                "icon": "Item 1",
+                "isActive": false,
+                "hide": false,
+                "type": "link",
+                "classes": "sub-item"
+            }
+        ]
+    },
+    {
+        "name": "Login",
+        "link": "/",
+        "icon": "",
+        "hide": false,
+        "type": "button",
+        "classes": "btn btn-primary"
+    }
+]

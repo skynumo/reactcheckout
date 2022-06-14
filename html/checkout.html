@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Checkout</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=""/>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">	
+	<link rel="stylesheet" href="css/countrySelect.css">	
+	<link rel="stylesheet" href="css/select2.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+
+	
+
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/countrySelect.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>	
+	<script src="js/select2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			update_amounts();
+			$('.qty, .price').on('keyup keypress blur change', function(e) {
+				update_amounts();
+			});
+		});
+		function update_amounts(){
+			var sum = 0.0;
+				$('.choose-traveller-listed .row').each(function() {
+					var qty = $(this).find('.qty').val();
+					var price = $(this).find('.price').val();
+					var amount = (qty*price)
+					sum+=amount;
+					$(this).find('.amount').text(''+amount);
+				});
+			$('.total').text(sum);
+		}
+
+		//----------------for quantity-increment-or-decrement-------
+		var incrementQty;
+		var decrementQty;
+		var plusBtn  = $(".cart-qty-plus");
+		var minusBtn = $(".cart-qty-minus");
+		var incrementQty = plusBtn.click(function() {
+			var $n = $(this)
+				.parent(".button-container")
+				.find(".qty");
+			$n.val(Number($n.val())+1 );
+			update_amounts();
+		});
+
+		var decrementQty = minusBtn.click(function() {
+				var $n = $(this)
+				.parent(".button-container")
+				.find(".qty");
+			var QtyVal = Number($n.val());
+			if (QtyVal > 0) {
+				$n.val(QtyVal-1);
+			}
+			update_amounts();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+		var current_fs, next_fs, previous_fs; //fieldsets
+		var opacity;
+		var current = 1;
+		var steps = $("fieldset").length;
+
+		setProgressBar(current);
+
+		$(".next").click(function(){
+
+		current_fs = $(this).parent();
+		next_fs = $(this).parent().next();
+
+		//Add Class Active
+		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+		//show the next fieldset
+		next_fs.show();
+		//hide the current fieldset with style
+		current_fs.animate({opacity: 0}, {
+		step: function(now) {
+		// for making fielset appear animation
+		opacity = 1 - now;
+
+		current_fs.css({
+		'display': 'none',
+		'position': 'relative'
+		});
+		next_fs.css({'opacity': opacity});
+		},
+		duration: 500
+		});
+		setProgressBar(++current);
+		});
+
+		$(".previous").click(function(){
+
+		current_fs = $(this).parent();
+		previous_fs = $(this).parent().prev();
+
+		//Remove class active
+		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+		//show the previous fieldset
+		previous_fs.show();
+
+		//hide the current fieldset with style
+		current_fs.animate({opacity: 0}, {
+		step: function(now) {
+		// for making fielset appear animation
+		opacity = 1 - now;
+
+		current_fs.css({
+		'display': 'none',
+		'position': 'relative'
+		});
+		previous_fs.css({'opacity': opacity});
+		},
+		duration: 500
+		});
+		setProgressBar(--current);
+		});
+
+		function setProgressBar(curStep){
+		var percent = parseFloat(100 / steps) * curStep;
+		percent = percent.toFixed();
+		$(".progress-bar")
+		.css("width",percent+"%")
+		}
+
+		// $(".submit").click(function(){
+		// return false;
+		// })
+
+		});
+
+	
+
+		
+		
+
+		$('.js-example-basic-single').select2({
+			minimumResultsForSearch: -1
+		});
+		$(function () {
+			$("#datepicker").datepicker({ 
+					autoclose: true, 
+					todayHighlight: true
+			});
+		});
+		$(function () {
+			$("#datepicker1").datepicker({ 
+					autoclose: true, 
+					todayHighlight: true
+			});
+		});
+
+		$("#country_selector").countrySelect({
+			defaultCountry: "bd",
+			onlyCountries: ['bd', 'ae', 'bh', 'sa'],
+			// responsiveDropdown: true,
+			//preferredCountries: ['ca', 'gb', 'us']
+			responsiveDropdown: true
+		});
+		$("#country_selector2").countrySelect({
+			defaultCountry: "bd",
+			onlyCountries: ['bd', 'ae', 'bh', 'sa'],
+			// responsiveDropdown: true,
+			//preferredCountries: ['ca', 'gb', 'us']
+			responsiveDropdown: true
+		});
+
+		var iSelectDropDown = (function() {
+		var $el = $(".iSelect");
+		var $elListItem = $(".iSelect").find("ul li");
+		var $selectedText = $(".iSelect").find(".select-label");
+		function iSelect() {
+			$elListItem.on("click", function() {
+			$selectedText.text($(this).text()).attr('title', $(this).text());
+			});
+		}
+		return iSelect;
+		})();
+		var iselect = new iSelectDropDown();
+	</script>
+
+</body>
+</html>

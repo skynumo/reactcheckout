@@ -1,13 +1,10 @@
-# React E-Commerce Template 
-React E-Commerce Template for Front End Web Application.
- 
-## How to start the project?
+# React Checkout Page
 
 ### Take a clone
-https://github.com/shrikant9907/react-ecommerce.git
+https://github.com/skynumo/reactcheckout.git
 
 ### Enter to the directory 
-`cd react-ecommerce`
+`cd reactcheckout`
 
 ### Install Packages
 `npm install`
